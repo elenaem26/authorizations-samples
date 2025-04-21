@@ -1,0 +1,12 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<body>
+    <h2>Привет, [[${name}]]!</h2>
+    <img th:src="@{${picture}}" width="100"/>
+    <p>Email: [[${email}]]</p>
+    <br>
+    <br>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
